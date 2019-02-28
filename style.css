@@ -1,0 +1,74 @@
+body{
+    background-color: #181818;
+    color: white;
+    font-family: 'Inconsolata', monospace;  
+}
+#shell{
+  background-color: #2E3436;
+  text-align: center;
+  width: 40%;
+  height: 400px;
+  border-radius: 10px;
+  margin: auto;
+  padding-right: 10px;
+  position: relative;
+  display: block;
+  top: 25vh;  
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: 'Inconsolata', monospace;  
+}
+button:focus {outline:0;}
+
+button{
+  background-color: yellowgreen;
+  margin-top: 20px;
+  margin-right: 9px;
+  margin-left: 3px;
+  padding: 5px;
+  float: right;;
+  border: none;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.button1{
+  background-color: #27ae60;
+}
+.button2{
+  background-color: #f39c12;
+}
+.button3{
+  background-color: #E75448;
+}
+.yellow{
+  margin-left: 5px;
+  float: left;
+  color: #f39c12;
+}
+[contenteditable]:focus {
+  outline: 0px solid transparent;
+}
+.root{
+  font-weight: bold;
+  float: left;
+  margin-left: 8px;
+  color: #f1c40f;
+}
+.tick{
+  float: left;
+}
+.tild{
+  font-weight: bold;
+  color: #7f8c8d; 
+}
+.input {
+  outline-color:  #30353a;
+  border: none;
+  display: inline-block;
+  float: left;
+  word-wrap: break-word;
+}
