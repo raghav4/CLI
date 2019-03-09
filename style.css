@@ -1,9 +1,11 @@
-body{
-    background-color: #181818;
-    color: white;
-    font-family: 'Inconsolata', monospace;  
+body {
+  background-color: #C4E538;
+  /*#181818 earlier*/
+  color: white;
+  font-family: 'Inconsolata', monospace;
 }
-#shell{
+
+#shell {
   overflow-y: scroll;
   background-color: #2E3436;
   width: 40%;
@@ -11,14 +13,21 @@ body{
   border-radius: 10px;
   margin: auto;
   position: relative;
-  top: 25vh;  
+  top: 25vh;
   color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  font-family: 'Inconsolata', monospace;  
+  font-family: 'Inconsolata', monospace;
 }
-button:focus {outline:0;}
 
-button{
+.head {
+  margin-left: 15px;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button {
   background-color: yellowgreen;
   margin-top: 15px;
   margin-right: 9px;
@@ -32,41 +41,51 @@ button{
   text-decoration: none;
   font-size: 16px;
 }
-.button1{
+
+.button1 {
   background-color: #27ae60;
 }
-.button2{
-  background-color: #f39c12;
+
+.button2 {
+  background-color: #FFC312;
 }
-.button3{
+
+.button3 {
   background-color: #E75448;
 }
-.yellow{
+
+.yellow {
   margin-left: 5px;
   float: left;
   color: #f39c12;
 }
+
 [contenteditable]:focus {
   outline: 0px solid transparent;
 }
-.root{
+
+.root {
   font-weight: bold;
   float: left;
   margin-left: 8px;
   color: #f1c40f;
 }
-.tick{
+
+.tick {
   float: left;
 }
-.tild{
+
+.tild {
   font-weight: bold;
-  color: #7f8c8d; 
+  color: #7f8c8d;
 }
+
 .input {
-  outline-color:  #30353a;
+  outline-color: #30353a;
   border: none;
 }
-#line{
+
+#line {
   margin-top: 25px;
   margin-left: 7px;
 }
@@ -75,13 +94,19 @@ button{
   width: 8px;
   height: 8px;
 }
+
 ::-webkit-scrollbar-button {
-  background: #ccc
-  border-box: 8px;
+  background: #ccc border-box: 8px;
 }
+
 ::-webkit-scrollbar-track-piece {
   background: #2E3436;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #eee
-}​
+}
+
+#line {
+  margin-top: 15px;
+}
