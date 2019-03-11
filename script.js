@@ -2,7 +2,9 @@ var input = document.getElementById("input");
 input.addEventListener("keyup", function (event) {
   if (event.keyCode === 13) {
     event.preventDefault();
-    newAppend();
+    //console.log(input.innerText);
+    performOperations(input.innerText);
+   // newAppend();
   }
 });
 
@@ -13,4 +15,23 @@ function newAppend() {
   insert.innerHTML = str;
   console.log(str);
   document.getElementById("line").appendChild(insert);
+}
+//var inp = document.getElementById("input").innerText;
+// if(inp == "help"){
+//   alert("help entered");
+// }
+const vars = {
+  root: ['about', 'resume', 'contact', 'talks'],
+  projects: ['nodemessage', 'map', 'dotify', 'slack_automation'],
+  skills: ['proficient', 'familiar', 'learning']
+} // Will have to knnow the directory first
+function performOperations(i){
+  console.log(i);
+  var p = i;
+  if(p == "help"){
+    console.log(1);
+  }
+  else{
+    console.log(0);
+  }
 }

@@ -4,6 +4,9 @@
 <head>
 
   <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -17,21 +20,24 @@
     <div id="shell">
       <button class="button1"></button>
       <button class="button2"></button>
-      <button class="button3"></button>
+      <button class="button3" onclick="location.reload()"></button>
       <br>
-      <p class="head"><span class="first">Welcome</span> to Raghav's terminal <img src="https://goo.gl/v98GXZ" alt=""
-          width="20" height="20"> , type 'help' to get started.</p>
+      <p class="head">Welcome to Raghav's terminal <img src="./assests/waving.png" alt="" width="20" height="20"> ,
+        type 'help' to get started.</p>
       <div id="line">
         <div id="subline">
           <p>
             <span class="root">root</span>
             <span class="tick">:<span class="tild">~</span>$&nbsp;</span>
-            <span contenteditable="true" id="input">lorem</span>
+            <span contenteditable="true" id="input">help</span>
           </p>
         </div>
       </div>
     </div>
   </div>
+  <!-- <div class="down">
+    <a href="#"><i class="fas fa-blog"></i> Check out my Blog</a>
+  </div> -->
 </body>
 <script src="script.js"></script>
 

@@ -52,6 +52,7 @@ button {
 
 .button3 {
   background-color: #E75448;
+  cursor: pointer;
 }
 
 .yellow {
@@ -110,3 +111,14 @@ button {
 #line {
   margin-top: 15px;
 }
+/* .down{
+  margin-top: 230px;
+  margin-left: 670px;
+  color: #181818;
+  font-family: 'Hammersmith One', sans-serif;
+}
+.down,a{
+  color: #1e272e;
+  font-weight: 500;
+  text-decoration: none;
+} */
