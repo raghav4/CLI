@@ -1,13 +1,12 @@
 body {
   background-color: #C4E538;
-  /*#181818 earlier*/
   color: white;
   font-family: 'Inconsolata', monospace;
 }
 
 #shell {
   overflow-y: scroll;
-  background-color: #2E3436;
+  background-color: #2E3436; /*2E3436*/
   width: 40%;
   height: 400px;
   border-radius: 10px;
@@ -72,9 +71,9 @@ button {
   color: #f1c40f;
 }
 
-.tick {
+/* .tick {
   float: left;
-}
+} */
 
 .tild {
   font-weight: bold;
@@ -101,7 +100,7 @@ button {
 }
 
 ::-webkit-scrollbar-track-piece {
-  background: #2E3436;
+  background: #2E3436; /*2E3436*/
 }
 
 ::-webkit-scrollbar-thumb {
