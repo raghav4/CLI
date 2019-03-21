@@ -110,7 +110,13 @@ button {
 #line {
   margin-top: 15px;
 }
-
+#history{
+  list-style: none;
+}
+.dir{
+  color: #83D4E7;
+  margin-left: 30px; 
+}
 /* .down{
   margin-top: 230px;
   margin-left: 670px;

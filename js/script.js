@@ -1,5 +1,5 @@
 var count = 0;
-var history = [];
+let history = [];
 newChild();
 
 function newChild() {
@@ -23,7 +23,7 @@ function newChild() {
 
   third.focus();
 }
-const helpInput = '<ul><li><b>ls</b> - display alls files in current directory</li><br><li><b>cat FILENAME</b> - displays the file</li><br><li><b>cd DIRECTORY</b> - changes the current working directory</li><br></ul>';
+const helpInput = '<ul><li><b>ls</b> - display all files and directories in the current directory</li><br><li><b>cat</b><i> FILENAME</i> - displays the file</li><br><li><b>cd</b><i> DIRECTORY </i>- changes the current working directory</li></ul><ul><li><b>history</b> - display all the previous commands</li><br>';
 
 var eListen = document.getElementById("cmd");
 eListen.addEventListener("keyup", function (event) {
@@ -31,19 +31,26 @@ eListen.addEventListener("keyup", function (event) {
     event.preventDefault();
     var inputText = document.getElementById(count).innerText;
     history[count] = inputText;
-    console.log(inputText);
+    history[count] = history[count].replace(/(\r\n|\n|\r)/gm, "");
 
     document.getElementById(count).setAttribute("contenteditable", false);
     if (inputText.trim() == "help") {
       document.getElementById(count).insertAdjacentHTML("afterend", helpInput);
     }
-    if (inputText.trim() == "history") {
-      console.log(history);
-      //document.getElementById(count).insertAdjacentHTML("afterend", history);
+    if (inputText.trim() === "ls") {
+      let ls = "<p><span class='dir'>cloud home</span> notes.txt markdown.md</p>"
+      document.getElementById(count).insertAdjacentHTML("afterend", ls);
     }
-    // if (inputText.trim() == "cd") {
-    //   document.getElementById("root").textContent = "home";
-    // }
+    if (inputText.trim() == "history") {
+      var ul = document.createElement('ul');
+      document.getElementById(count).appendChild(ul);
+      history.forEach(element => {
+        var li = document.createElement('li');
+        li.setAttribute("id", "history");
+        ul.appendChild(li);
+        li.innerHTML += element;
+      });
+    }
     ++count;
     newChild();
   }
