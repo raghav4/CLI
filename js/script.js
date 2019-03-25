@@ -1,5 +1,6 @@
 var count = 0;
 let history = [];
+let content = ['ls', 'cat', 'help', 'history']
 newChild();
 
 function newChild() {
@@ -23,17 +24,24 @@ function newChild() {
 
   third.focus();
 }
-const helpInput = '<ul><li><b>ls</b> - display all files and directories in the current directory</li><br><li><b>cat</b><i> FILENAME</i> - displays the file</li><br><li><b>cd</b><i> DIRECTORY </i>- changes the current working directory</li></ul><ul><li><b>history</b> - display all the previous commands</li><br>';
+const helpInput = '<ul><li><b>ls</b> - display all files and directories in the current directory</li><br><li><b>cat</b><i> FILENAME</i> - displays the file</li><br><li><b>history</b> - display all the previous commands</li></ul><br>';
 
 var eListen = document.getElementById("cmd");
 eListen.addEventListener("keyup", function (event) {
   if (event.keyCode === 13) {
     event.preventDefault();
-    var inputText = document.getElementById(count).innerText;
+    let inputText = document.getElementById(count).innerText;
+    let res = inputText.trim().split(' ');
+
     history[count] = inputText;
     history[count] = history[count].replace(/(\r\n|\n|\r)/gm, "");
 
     document.getElementById(count).setAttribute("contenteditable", false);
+    if (content.indexOf(res[0]) == -1) {
+      let falseInput = "<p style='margin-left:10px;'>Error: Command not found </p>";
+      history.pop();
+      document.getElementById(count).insertAdjacentHTML("afterend", falseInput);
+    }
     if (inputText.trim() == "help") {
       document.getElementById(count).insertAdjacentHTML("afterend", helpInput);
     }
@@ -41,8 +49,8 @@ eListen.addEventListener("keyup", function (event) {
       let ls = "<p><span class='dir'>cloud home</span> notes.txt markdown.md</p>"
       document.getElementById(count).insertAdjacentHTML("afterend", ls);
     }
-    if(inputText.trim()==="cat notes.txt"){
-     let notes = "<a href='https://www.w3schools.com' style='color: white; margin-left: 250px;'>View Resume</a>"
+    if (inputText.trim() === "cat notes.txt") {
+      let notes = "<a href='#' target='blank' style='color: white; margin-left: 250px;'>View Notes</a>"
       document.getElementById(count).insertAdjacentHTML("afterend", notes);
     }
     if (inputText.trim() == "history") {
