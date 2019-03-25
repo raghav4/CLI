@@ -41,6 +41,10 @@ eListen.addEventListener("keyup", function (event) {
       let ls = "<p><span class='dir'>cloud home</span> notes.txt markdown.md</p>"
       document.getElementById(count).insertAdjacentHTML("afterend", ls);
     }
+    if(inputText.trim()==="cat notes.txt"){
+     let notes = "<a href='https://www.w3schools.com' style='color: white; margin-left: 250px;'>View Resume</a>"
+      document.getElementById(count).insertAdjacentHTML("afterend", notes);
+    }
     if (inputText.trim() == "history") {
       var ul = document.createElement('ul');
       document.getElementById(count).appendChild(ul);
