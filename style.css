@@ -1,4 +1,5 @@
 body {
+  overflow: hidden;
   background-color: #C4E538;
   color: white;
   font-family: 'Inconsolata', monospace;
@@ -6,7 +7,8 @@ body {
 
 #shell {
   overflow-y: scroll;
-  background-color: #2E3436; /*2E3436*/
+  background-color: #2E3436;
+  /*2E3436*/
   width: 40%;
   height: 400px;
   border-radius: 10px;
@@ -74,6 +76,11 @@ button {
 /* .tick {
   float: left;
 } */
+@media screen and (max-width: 640px) {
+  #acr {
+    font-size: 15px !important;
+  }
+}
 
 .tild {
   font-weight: bold;
@@ -100,7 +107,8 @@ button {
 }
 
 ::-webkit-scrollbar-track-piece {
-  background: #2E3436; /*2E3436*/
+  background: #2E3436;
+  /*2E3436*/
 }
 
 ::-webkit-scrollbar-thumb {
@@ -110,13 +118,31 @@ button {
 #line {
   margin-top: 15px;
 }
-#history{
+
+#history {
   list-style: none;
 }
-.dir{
+
+.dir {
   color: #83D4E7;
-  margin-left: 30px; 
+  margin-left: 30px;
 }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #C4E538;
+  color: #1C2833;
+  font-weight: bold;
+  text-align: center;
+}
+.footer,a{
+  text-decoration: none;
+  color: #1C2833;
+}
+
 /* .down{
   margin-top: 230px;
   margin-left: 670px;

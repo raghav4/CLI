@@ -46,11 +46,11 @@ eListen.addEventListener("keyup", function (event) {
       document.getElementById(count).insertAdjacentHTML("afterend", helpInput);
     }
     if (inputText.trim() === "ls") {
-      let ls = "<p><span class='dir'>cloud home</span> notes.txt markdown.md</p>"
+      let ls = "<p><span class='dir'>cloud home</span> resume markdown.md</p>"
       document.getElementById(count).insertAdjacentHTML("afterend", ls);
     }
-    if (inputText.trim() === "cat notes.txt") {
-      let notes = "<a href='#' target='blank' style='color: white; margin-left: 250px;'>View Notes</a>"
+    if (inputText.trim() === "cat resume") {
+      let notes = "<a href='./assests/blank-pdf.pdf' target='blank' style='color: white; margin-left: 250px; text-decoration:underline'>View Resume</a>"
       document.getElementById(count).insertAdjacentHTML("afterend", notes);
     }
     if (inputText.trim() == "history") {

@@ -24,13 +24,26 @@
       <br>
       <p class="head">Welcome to Raghav's terminal <img src="./assests/waving.png" alt="" width="20" height="20"> ,
         type 'help' to get started.</p>
+      <div class="footer">
+        <p>Made with ❤️ by <a href="https://raghavsharma.xyz" target="_blank">Raghav</a> </p>
+        <br>
+      </div>
       <div id="cmd">
-        <!--Here-->
+      
       </div>
     </div>
   </div>
-  
+
 </body>
+<script src="./js/confetti.js"></script>
+<script>
+  setTimeout(function () {
+    startConfetti();
+  }, 0);
+  setTimeout(function () {
+    stopConfetti();
+  }, 3000);
+</script>
 <script src="./js/script.js"></script>
 
 </html>
