@@ -50,7 +50,7 @@ eListen.addEventListener("keyup", function (event) {
       document.getElementById(count).insertAdjacentHTML("afterend", ls);
     }
     if (inputText.trim() === "cat resume") {
-      let notes = "<a href='./assests/blank-pdf.pdf' target='blank' style='color: white; margin-left: 250px; text-decoration:underline'>View Resume</a>"
+      let notes = "<a href='https://res.cloudinary.com/rexon/image/upload/v1555586894/blank-pdf_utizyi.pdf' target='blank' style='color: white; margin-left: 250px; text-decoration:underline'>View Resume</a>"
       document.getElementById(count).insertAdjacentHTML("afterend", notes);
     }
     if (inputText.trim() == "history") {
@@ -63,6 +63,10 @@ eListen.addEventListener("keyup", function (event) {
         li.innerHTML += element;
       });
     }
+    // else{
+    //   let errorCmd = "<p style='margin-left:10px;'>Error: Command not found </p>";
+    //   document.getElementById(count).insertAdjacentHTML("afterend", falseInput);
+    // }
     ++count;
     newChild();
   }
