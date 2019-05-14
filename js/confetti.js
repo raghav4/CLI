@@ -13,7 +13,7 @@ var isConfettiRunning; //call and returns true or false depending on whether the
 	removeConfetti = removeConfettiInner;
 	isConfettiRunning = isConfettiRunningInner;
 	//var colors = ["DodgerBlue", "OliveDrab", "Gold", "Pink", "SlateBlue", "LightBlue", "Violet", "PaleGreen", "SteelBlue", "SandyBrown", "Chocolate", "Crimson"]
-	var colors = ["#e55039","#0c2461","#079992","#b71540","#78e08f","#6F1E51","#ED4C67","#006266","#F79F1F","#C4E538","#2f3542","#ff7f50","#ffffff","#ced6e0","#2ed573","#ced6e0"]
+	var colors = ["#e55039","#0c2461","#079992","#b71540","#78e08f","#6F1E51","#ED4C67","#006266","#F79F1F","#C4E538","#2f3542","#ff7f50","#ffffff","#ced6e0","#2ed573","#ced6e0","#B53471","#FFC312","#EA2027"]
 	var streamingConfetti = false;
 	var animationTimer = null;
 	var particles = [];
