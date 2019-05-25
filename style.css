@@ -144,14 +144,6 @@ button {
   color: #1C2833;
 }
 
-/* .down{
-  margin-top: 230px;
-  margin-left: 670px;
-  color: #181818;
-  font-family: 'Hammersmith One', sans-serif;
+@media (min-width: 600px) {
+  
 }
-.down,a{
-  color: #1e272e;
-  font-weight: 500;
-  text-decoration: none;
-} */
