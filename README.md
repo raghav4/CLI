@@ -1,8 +1,10 @@
 # Terminal Styled Personal Portfolio :school_satchel:
 An Interactive `command-line interface` styled personal portfolio.
 <br>
-[![star this repo](http://githubbadges.com/star.svg?user=raghav4&repo=CLI&style=flat)](https://github.com/raghav4/CLI)
-[![fork this repo](http://githubbadges.com/fork.svg?user=raghav4&repo=CLI&style=flat)](https://github.com/raghav4/CLI/fork)
+![star this repo](https://img.shields.io/github/stars/raghav4/CLI.svg)
+
+![fork this repo](https://img.shields.io/github/forks/raghav4/CLI.svg)
+
 ![license](https://img.shields.io/github/license/raghav4/cli.svg?style=flat-square)
 ![status](https://img.shields.io/badge/status-under%20development-blue.svg)
 <br>
