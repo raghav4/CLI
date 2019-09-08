@@ -9,7 +9,7 @@ body {
 
 #shell {
   overflow-y: scroll;
-  background-color: #212121;
+  background-color: black; /*#212121*/
   /*2E3436*/
   width: 40%;
   height: 400px;

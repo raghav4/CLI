@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/raghav4/cli/issues"
   },
-  "homepage": "https://github.com/raghav4/cli#readme"
+  "homepage": "https://github.com/raghav4/cli#readme",
+  "devDependencies": {
+    "surge": "^0.21.3"
+  }
 }
