@@ -1,3 +1,7 @@
+html, body {
+  overflow-y:hidden;
+  height:100%;
+}
 body {
   overflow: hidden;
   background: #00C9FF; 
@@ -98,23 +102,24 @@ button {
   margin-top: 25px;
   margin-left: 7px;
 }
-
-/* ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-::-webkit-scrollbar-button {
-  background: #ccc border-box: 8px;
-}
-
-::-webkit-scrollbar-track-piece {
-  background: #212121;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #eee
-} */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+  background: black;
+  border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: black;  
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+  background: #221122;  
+  }
 
 #line {
   margin-top: 15px;
@@ -147,7 +152,7 @@ span.wave {
 
 .footer {
   position: fixed;
-  font-family: 'Manjari', sans-serif;
+  /* font-family: 'Manjari', sans-serif; */
   left: 0;
   bottom: 0;
   width: 100%;
@@ -164,3 +169,5 @@ a {
 }
 
 @media (min-width: 600px) {}
+
+

@@ -10,7 +10,7 @@ function newChild() {
   let second = document.createElement('span');
   let third = document.createElement('span');
 
-  first.innerHTML = '<span class="root" id="root">root</span>';
+  first.innerHTML = '<span class="root" id="root">➝ root</span>';
   second.innerHTML = '<span class="colon">:<span class="tild">~</span>$&nbsp;</span>';
 
   third.setAttribute("class", "input");
@@ -46,12 +46,16 @@ eListen.addEventListener("keyup", function (event) {
       document.getElementById(count).insertAdjacentHTML("afterend", helpInput);
     }
     if (inputText.trim() === "ls") {
-      let ls = "<p><span class='dir'>cloud home</span> resume markdown.md</p>"
+      let ls = "<p><span class='dir'>skills home</span> resume markdown.md</p>"
       document.getElementById(count).insertAdjacentHTML("afterend", ls);
     }
     if (inputText.trim() === "cat resume") {
       let notes = "<a href='https://res.cloudinary.com/rexon/image/upload/v1555586894/blank-pdf_utizyi.pdf' target='blank' style='color: white; margin-left: 250px; text-decoration:underline'>View Resume</a>"
       document.getElementById(count).insertAdjacentHTML("afterend", notes);
+    }
+    if(inputText.trim() == "cd skills"){
+      alert('hi')
+      document.getElementById("root").innerText = "➝ root/skills";
     }
     if (inputText.trim() == "history") {
       var ul = document.createElement('ul');
